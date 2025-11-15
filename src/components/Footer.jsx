@@ -1,87 +1,73 @@
+import { FaInstagram, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
+
 function Footer() {
   return (
-    <footer className="w-full bg-amber-77 text-stone-300 py-20 px-6 md:px-16">
-      <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+    <footer className="bg-stone-700 text-black">
+      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-6">
+        {/* Top: Gallery Name + Social Icons */}
+        <div className="flex justify-between items-center border-b border-gray-300 pb-6">
+          {/* Gallery Name */}
+          <h1 className="text-2xl font-bold">ArtHouse Gallery</h1>
 
-        {/* Brand */}
-        <h2 className="text-3xl font-extrabold text-amber-100 tracking-wide">
-          The MuseHall
-        </h2>
+          {/* Social Icons */}
+          <div className="flex space-x-6 text-xl">
+            <FaInstagram className="hover:text-yellow-400 transition-colors duration-300" />
+            <FaTwitter className="hover:text-yellow-400 transition-colors duration-300" />
+            <FaPinterest className="hover:text-yellow-400 transition-colors duration-300" />
+            <FaLinkedin className="hover:text-yellow-400 transition-colors duration-300" />
+          </div>
+        </div>
 
-        {/* Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-12 w-full">
-
-          {/* Gallery */}
+        {/* Footer Links */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-10 text-sm">
+          {/* Exhibitions */}
           <div>
-            <h4 className="font-semibold text-amber-200 mb-4 uppercase tracking-wide text-sm">
-              Gallery
-            </h4>
-            <ul className="space-y-2 text-sm text-stone-400">
-              <li className="hover:text-amber-300 transition">Current Exhibitions</li>
-              <li className="hover:text-amber-300 transition">Permanent Collection</li>
-              <li className="hover:text-amber-300 transition">Featured Artists</li>
-              <li className="hover:text-amber-300 transition">New Arrivals</li>
+            <h3 className="font-bold mb-4">Exhibitions</h3>
+            <ul className="space-y-2">
+              {["Upcoming", "Current", "Past", "Virtual"].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
 
-          {/* Programs */}
+          {/* Artists */}
           <div>
-            <h4 className="font-semibold text-amber-200 mb-4 uppercase tracking-wide text-sm">
-              Programs
-            </h4>
-            <ul className="space-y-2 text-sm text-stone-400">
-              <li className="hover:text-amber-300 transition">Art Workshops</li>
-              <li className="hover:text-amber-300 transition">Artist Talks</li>
-              <li className="hover:text-amber-300 transition">Guided Tours</li>
-              <li className="hover:text-amber-300 transition">Special Events</li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h4 className="font-semibold text-amber-200 mb-4 uppercase tracking-wide text-sm">
-              Resources
-            </h4>
-            <ul className="space-y-2 text-sm text-stone-400">
-              <li className="hover:text-amber-300 transition">Visitor Information</li>
-              <li className="hover:text-amber-300 transition">Membership</li>
-              <li className="hover:text-amber-300 transition">Gallery Blog</li>
-              <li className="hover:text-amber-300 transition">Press Releases</li>
+            <h3 className="font-bold mb-4">Artists</h3>
+            <ul className="space-y-2">
+              {["Featured", "Emerging", "Collaborations", "Submit Work"].map(
+                (item) => (
+                  <li key={item}>{item}</li>
+                )
+              )}
             </ul>
           </div>
 
           {/* About */}
           <div>
-            <h4 className="font-semibold text-amber-200 mb-4 uppercase tracking-wide text-sm">
-              About
-            </h4>
-            <ul className="space-y-2 text-sm text-stone-400">
-              <li className="hover:text-amber-300 transition">Our Story</li>
-              <li className="hover:text-amber-300 transition">Mission & Vision</li>
-              <li className="hover:text-amber-300 transition">Team</li>
-              <li className="hover:text-amber-300 transition">Careers</li>
+            <h3 className="font-bold mb-4">About</h3>
+            <ul className="space-y-2">
+              {["Our Story", "Press", "Careers", "Contact"].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
 
-          {/* For Collectors */}
+          {/* Visit */}
           <div>
-            <h4 className="font-semibold text-amber-200 mb-4 uppercase tracking-wide text-sm">
-              For Collectors
-            </h4>
-            <ul className="space-y-2 text-sm text-stone-400">
-              <li className="hover:text-amber-300 transition">Private Viewings</li>
-              <li className="hover:text-amber-300 transition">Acquisitions</li>
-              <li className="hover:text-amber-300 transition">Corporate Collections</li>
-              <li className="hover:text-amber-300 transition">Art Consultation</li>
+            <h3 className="font-bold mb-4">Visit</h3>
+            <ul className="space-y-2">
+              {["Location", "Hours", "Guided Tours", "Events"].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Footer */}
-      <p className="text-center text-xs text-stone-500 mt-16">
-        © The MuseHall 2025. All Rights Reserved
-      </p>
+        {/* Bottom */}
+        <div className="mt-10 text-center text-sm border-t border-gray-300 pt-6 text-black">
+          © The MuseHall Gallery {new Date().getFullYear()} | All Rights Reserved
+        </div>
+      </div>
     </footer>
   );
 }
