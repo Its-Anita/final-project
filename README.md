@@ -6,7 +6,7 @@ https://artgallery-sable.vercel.app/
 ---
 
 ## Project Overview
-MuseHall is a modern online art gallery built with React and Tailwind CSS, designed to showcase curated artwork in an elegant, minimal, and emotionally warm aesthetic. The website provides visitors with a seamless browsing experience through its hero showcase, curated art grid, testimonials, and contact/CTA section — all crafted to reflect the identity of a premium art space.
+MuseHall is a modern online art gallery built with React and Tailwind CSS, designed to showcase curated artwork in an elegant, minimal, and emotionally warm aesthetic. The website provides visitors with a seamless browsing experience through its hero showcase, curated art grid, testimonials, and contact/CTA section all crafted to reflect the identity of a premium art space.
 
 ---
 
