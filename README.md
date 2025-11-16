@@ -1,8 +1,7 @@
 # MuseHall Gallery
 
 ## Live Demo
-https://artgallery-sable.vercel.app/
-
+https://musehall.vercel.app/
 ---
 
 ## Project Overview
