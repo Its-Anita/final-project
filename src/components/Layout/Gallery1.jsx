@@ -1,29 +1,49 @@
-import bestImage from "../../assets/Images/newin4.jpeg";
+import new1 from "../../assets/Images/newin.jpeg";
+import new2 from "../../assets/Images/newin1.jpeg";
+import new3 from "../../assets/Images/newin2.jpeg";
+import new4 from "../../assets/Images/newin3.jpeg";
 
-function Gallery1() {
+function Features() {
   return (
-    <section className="bg-white flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-8 lg:px-16 py-12 sm:py-16 md:py-20 lg:py-24 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+    <section className="bg-neutral-50 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20">
       
-      {/* Text Section */}
-      <div className="w-full md:w-1/2 text-center md:text-left space-y-4 sm:space-y-6 md:space-y-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-stone-900 leading-tight">
-          A Curated Masterpiece for Your Space
+      {/* TEXT */}
+      <div className="md:w-1/3 text-center md:text-left space-y-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          New Arrivals in the Gallery
         </h2>
 
-        <p className="text-sm sm:text-base md:text-lg text-stone-600 max-w-md mx-auto md:mx-0 leading-relaxed">
-          Each artwork in our collection is thoughtfully selected for its depth,
-          emotion, and timeless elegance. From bold contemporary pieces to soft,
-          atmospheric portraits we help you find the perfect statement for
-          your home or gallery.
+        <p className="text-gray-600 max-w-md mx-auto md:mx-0 leading-relaxed">
+          Discover our latest curated pieces expressive paintings, modern sculptures,
+          and distinctive artworks selected to elevate your space with depth and emotion.
         </p>
+
+        <button className="bg-yellow-600 hover:bg-yellow-700 transition px-8 py-3 rounded-full text-white font-semibold shadow-md">
+          Explore New Art
+        </button>
       </div>
 
-      {/* Image */}
-      <div className="w-full md:w-1/2 flex justify-center">
+      {/* IMAGES */}
+      <div className="md:w-2/3 mt-12 md:mt-0 flex justify-center items-center gap-4">
         <img
-          src={bestImage}
-          alt="Art Piece Showcase"
-          className="rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg sm:shadow-xl w-full max-w-sm sm:max-w-md md:max-w-lg object-cover h-56 sm:h-72 md:h-96"
+          src={new1}
+          alt="New Art 1"
+          className="rounded-xl shadow-lg object-cover w-1/4 h-64 border border-neutral-200"
+        />
+        <img
+          src={new2}
+          alt="New Art 2"
+          className="rounded-xl shadow-lg object-cover w-1/4 h-64 border border-neutral-200"
+        />
+        <img
+          src={new3}
+          alt="New Art 3"
+          className="rounded-xl shadow-lg object-cover w-1/4 h-64 border border-neutral-200"
+        />
+        <img
+          src={new4}
+          alt="New Art 4"
+          className="rounded-xl shadow-lg object-cover w-1/4 h-64 border border-neutral-200"
         />
       </div>
 
@@ -31,4 +51,4 @@ function Gallery1() {
   );
 }
 
-export default Gallery1;
+export default Features;

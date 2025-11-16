@@ -64,7 +64,7 @@ function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-10 sm:mt-12 md:mt-14 text-center text-xs sm:text-sm border-t border-gray-300 pt-6 sm:pt-8 text-black">
+        <div className="mt-10 text-center text-sm border-t border-gray-300 pt-6 text-black">
           © The MuseHall Gallery {new Date().getFullYear()} | All Rights Reserved
         </div>
       </div>
