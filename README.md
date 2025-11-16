@@ -94,5 +94,4 @@ This structure ensures scalability, reuse, and easy project expansion.
 
 ### 1. Clone Repository
 ```
-git clone https://github.com/Its-Anita/Final-Project.git
-
+git clone https://github.com/Its-Anita/final-project.git
